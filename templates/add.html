@@ -2,8 +2,9 @@
 
 {%block main %}
 <p>Some about page</p>
-<form action="/about" method="POST">
+<form action="/add" method="POST">
     {{ form.csrf_token }}
+    {{ form.title.label }}
     {{ form.title }}
     {{ form.submit }}
 </form>

@@ -6,8 +6,8 @@
         <h1>Task Manager</h1>
         <h3>Very Useeful website</h3>
         <ul>
-            <li><a href="#">Home Page</a></li>
-            <li><a href="#">About Page</a></li>
+            <li><a href="{{ url_for('index')}}">Home Page</a></li>
+            <li><a href="{{ url_for('add')}}">Add Page</a></li>
         </ul>
         {% block main %}
         {% endblock %}
